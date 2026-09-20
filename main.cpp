@@ -1,6 +1,6 @@
 #include <iostream>
 #include "subnet.h"
-
+#include "dnslookup.h"
 using namespace std;
 
 
@@ -43,6 +43,7 @@ int main()
         else if (choice == 2)
         {
             cout << "Opening DNS Lookup..." << endl;
+            dnsLookup();
         }
         else if (choice == 3)
         {
