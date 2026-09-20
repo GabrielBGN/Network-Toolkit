@@ -1,6 +1,7 @@
 #include <iostream>
 #include "subnet.h"
 #include "dnslookup.h"
+#include "portchecker.h"
 using namespace std;
 
 
@@ -48,6 +49,7 @@ int main()
         else if (choice == 3)
         {
             cout << "Opening TCP Port Checker..." << endl;
+            portChecker();
         }
         else if (choice == 4)
         {
