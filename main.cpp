@@ -3,6 +3,8 @@
 #include "dnslookup.h"
 #include "portchecker.h"
 #include "portscanner.h"
+#include "ping.h"
+#include "traceroute.h"
 using namespace std;
 
 
@@ -60,10 +62,12 @@ int main()
         else if (choice == 5)
         {
             cout << "Opening Ping..." << endl;
+            pingTool();
         }
         else if (choice == 6)
         {
             cout << "Opening Traceroute..." << endl;
+            tracerouteTool();
         }
         else if (choice == 7)
         {
